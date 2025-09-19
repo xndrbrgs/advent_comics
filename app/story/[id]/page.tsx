@@ -1,7 +1,7 @@
 "use client";
 
 import { useParams, useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { stories } from "@/data/stories";
 import { AnimatePresence, motion } from "framer-motion";
 import DynamicAvatarRenderer from "@/components/avatar/DynamicAvatarRenderer";
@@ -12,9 +12,18 @@ export default function StoryPage() {
   const router = useRouter();
   const story = stories[id as keyof typeof stories];
   const [pageIndex, setPageIndex] = useState(0);
+  const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
     if (!story) router.push("/story");
+
+    // Autoplay music when story loads
+    if (audioRef.current) {
+      audioRef.current.volume = 0.2;
+      audioRef.current.play().catch((err) => {
+        console.warn("Autoplay failed:", err);
+      });
+    }
   }, [story]);
 
   if (!story) return null;
@@ -49,6 +58,11 @@ export default function StoryPage() {
   return (
     <div className="p-6 max-w-5xl mx-auto relative">
       <h1 className="text-5xl font-bold mb-4 text-black">{story.title}</h1>
+
+      {/* 🎵 Music Player */}
+      {story.music && (
+        <audio ref={audioRef} src={story.music} loop autoPlay hidden />
+      )}
 
       <AnimatePresence mode="wait">
         <div

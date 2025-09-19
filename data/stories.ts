@@ -1,6 +1,7 @@
 export const stories = {
     "nitrous-sedation": {
         title: "The Funniest Dream I’ve Ever Had!",
+        music: "/music/happy.mp3",
         pages: [
             {
                 text: "One day, I hurt my arm and Mom said we had to go to the emergency room. I thought it might be scary, but when we walked in, it was… so pretty!",

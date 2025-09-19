@@ -1,27 +1,17 @@
 // app/story/[id]/loading.tsx
+import { getImageList } from "@/lib/getImageList";
 import Head from "next/head";
 
 export default function Loading() {
+  const backgrounds = getImageList("backgrounds/nitrous-sedation", [".svg"]);
+  const npcs = getImageList("npc", [".webp"]);
+
   return (
     <>
       <Head>
-        {require("fs")
-          .readdirSync("/backgrounds/nitrous-sedation")
-          .filter((file: any) => file.endsWith(".svg"))
-          .map((file: any, i: any) => (
-            <link
-              key={i}
-              rel="preload"
-              as="image"
-              href={`/backgrounds/nitrous-sedation/${file}`}
-            />
-          ))}
-        {require("fs")
-          .readdirSync("/npc")
-          .filter((file: any) => file.endsWith(".webp"))
-          .map((file: any, i: any) => (
-            <link key={i} rel="preload" as="image" href={`/npc/${file}`} />
-          ))}
+        {[...backgrounds, ...npcs].map((src, i) => (
+          <link key={i} rel="preload" as="image" href={src} />
+        ))}
       </Head>
 
       <div className="absolute inset-0 flex justify-center items-center">
