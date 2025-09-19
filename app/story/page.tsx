@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { stories } from "@/data/stories";
+import { motion } from "framer-motion";
 
 export default function StorySelectionPage() {
   const router = useRouter();
@@ -11,7 +12,13 @@ export default function StorySelectionPage() {
   };
 
   return (
-    <div className="flex justify-center items-center h-[90vh] text-black">
+    <motion.div
+      initial={{ opacity: 0, x: 0 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 0 }}
+      transition={{ duration: 0.5 }}
+      className="flex justify-center items-center h-[90vh] text-black"
+    >
       <div className="grid grid-cols-12">
         <div className="col-span-12 items-center text-center">
           <h1 className="text-7xl font-bold mb-4">Choose Your Story!</h1>
@@ -31,6 +38,6 @@ export default function StorySelectionPage() {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
