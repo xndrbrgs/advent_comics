@@ -6,6 +6,7 @@ export const stories = {
             {
                 text: "One day, I hurt my arm and Mom said we had to go to the emergency room. I thought it might be scary, but when we walked in, it was… so pretty!",
                 image: "/backgrounds/nitrous-sedation/slide (1).svg",
+                sound: "/vo/nitrous-sedation/slide.mp3",
                 avatars: [
                     {
                         id: "main", // could be used to distinguish characters
@@ -19,6 +20,7 @@ export const stories = {
             {
                 text: "The walls were painted with little fishies that swam and swirled all around. It felt like we had stepped right into the ocean!",
                 image: "/backgrounds/nitrous-sedation/slide (2).svg",
+                sound: "/vo/nitrous-sedation/slide2.mp3",
                 avatars: [
                     {
                         id: "main",
@@ -31,6 +33,7 @@ export const stories = {
             {
                 text: "While we waited, a nurse with a big smile came over. “Come with me!” she said. She walked us down the hall to a special room.",
                 image: "/backgrounds/nitrous-sedation/slide (2).svg",
+                sound: "/vo/nitrous-sedation/slide3.mp3",
                 avatars: [
                     {
                         id: "main",
@@ -52,6 +55,7 @@ export const stories = {
             {
                 text: "And oh wow—it was the coolest room ever! There was a giant screen playing The Little Mermaid and Finding Nemo. I climbed onto the bed, snuggled in, and watched the fish swim on the screen.",
                 image: "/backgrounds/nitrous-sedation/slide (4).svg",
+                sound: "/vo/nitrous-sedation/slide4.mp3",
                 avatars: [
                     {
                         id: "main",
@@ -64,6 +68,7 @@ export const stories = {
             {
                 text: "Then the doctor came in. She looked at my arm and talked about lots of things I didn’t really understand. But then she mentioned something about feeling sleepy.",
                 image: "/backgrounds/nitrous-sedation/slide (5).svg",
+                sound: "/vo/nitrous-sedation/slide5.mp3",
                 avatars: [
                     {
                         id: "main",
@@ -91,6 +96,7 @@ export const stories = {
             {
                 text: "That’s when the Child Life Specialist came in, pushing a funny-looking machine. “This is going to help your arm feel better,” she explained. “It gives you laughing gas through a little mask. You can even pick a flavor to make it smell nice!”",
                 image: "/backgrounds/nitrous-sedation/slide (5).svg",
+                sound: "/vo/nitrous-sedation/slide6.mp3",
                 avatars: [
                     {
                         id: "main",
@@ -134,6 +140,7 @@ export const stories = {
             {
                 text: "I picked a flavor (because who wants stinky gas?). She told me to start thinking about what I wanted to dream about",
                 image: "/backgrounds/nitrous-sedation/slide (5).svg",
+                sound: "/vo/nitrous-sedation/slide7.mp3",
                 avatars: [
                     {
                         id: "main",
@@ -178,6 +185,7 @@ export const stories = {
             {
                 text: "I knew right away: a unicorn playing volleyball in a tutu!",
                 image: "/backgrounds/nitrous-sedation/slide (8).svg",
+                sound: "/vo/nitrous-sedation/slide8.mp3",
                 avatars: [
                     {
                         id: "main",
@@ -198,6 +206,7 @@ export const stories = {
             {
                 text: "The doctor came back in and it was time. “Ready? Let’s count together!”",
                 image: "/backgrounds/nitrous-sedation/slide (9).svg",
+                sound: "/vo/nitrous-sedation/slide9.mp3",
                 avatars: [
                     {
                         id: "main",
@@ -234,6 +243,7 @@ export const stories = {
             {
                 text: "I started to count… one… two… three…",
                 image: "/npc/dream.webp",
+                sound: "/vo/nitrous-sedation/slide10.mp3",
                 avatars: [
                     {
                         id: "123",
@@ -259,6 +269,7 @@ export const stories = {
             },
             {
                 text: "BOOM! Suddenly, I was in a magical beach, playing volleyball with a unicorn in a sparkly tutu. We laughed, jumped and had the best time ever!",
+                sound: "/vo/nitrous-sedation/slide11.mp3",
                 image: "/npc/beach.webp",
                 avatars: [
                     {
@@ -280,6 +291,7 @@ export const stories = {
             {
                 text: "Then, the sun got brighter and brighter!",
                 image: "/npc/beach.webp",
+                sound: "/vo/nitrous-sedation/slide12.mp3",
                 avatars: [
                     {
                         id: "main",
@@ -313,6 +325,7 @@ export const stories = {
             {
                 text: "It was Mom! She was smiling at me. I looked down and—guess what?—my arm was all fixed!",
                 image: "/backgrounds/nitrous-sedation/slide (13).svg",
+                sound: "/vo/nitrous-sedation/slide13.mp3",
                 avatars: [
                     {
                         id: "main",
@@ -340,6 +353,7 @@ export const stories = {
             {
                 text: "The fishies on the wall seemed to wiggle and wave goodbye as I whispered, “Funnest Dream Ever!”",
                 image: "/backgrounds/nitrous-sedation/slide (14).svg",
+                sound: "/vo/nitrous-sedation/slide14.mp3",
                 avatars: [
                     {
                         id: "main",

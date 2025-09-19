@@ -13,18 +13,30 @@ export default function StoryPage() {
   const story = stories[id as keyof typeof stories];
   const [pageIndex, setPageIndex] = useState(0);
   const audioRef = useRef<HTMLAudioElement>(null);
+  const pageSoundRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
     if (!story) router.push("/story");
 
     // Autoplay music when story loads
     if (audioRef.current) {
-      audioRef.current.volume = 0.2;
+      audioRef.current.volume = 0.15;
       audioRef.current.play().catch((err) => {
         console.warn("Autoplay failed:", err);
       });
     }
   }, [story]);
+
+  useEffect(() => {
+    const currentSound = story.pages[pageIndex]?.sound;
+
+    if (currentSound && pageSoundRef.current) {
+      pageSoundRef.current.src = currentSound;
+      pageSoundRef.current.play().catch((err) => {
+        console.warn("Page sound playback failed:", err);
+      });
+    }
+  }, [pageIndex]);
 
   if (!story) return null;
 
@@ -63,6 +75,8 @@ export default function StoryPage() {
       {story.music && (
         <audio ref={audioRef} src={story.music} loop autoPlay hidden />
       )}
+
+      <audio ref={pageSoundRef} hidden />
 
       <AnimatePresence mode="wait">
         <div
