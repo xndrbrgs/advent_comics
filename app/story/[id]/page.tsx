@@ -66,6 +66,7 @@ export default function StoryPage() {
               alt={`Slide ${pageIndex + 1}`}
               className="w-full h-full object-cover"
               fill
+              loading="lazy"
             />
           </motion.div>
 
