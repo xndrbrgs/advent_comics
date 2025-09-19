@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { stories } from "@/data/stories";
 import { AnimatePresence, motion } from "framer-motion";
 import DynamicAvatarRenderer from "@/components/avatar/DynamicAvatarRenderer";
+import Image from "next/image";
 
 export default function StoryPage() {
   const { id } = useParams();
@@ -54,18 +55,22 @@ export default function StoryPage() {
           key={pageIndex}
           className="relative w-full h-[60vh] rounded-lg overflow-hidden shadow-lg mb-6"
         >
-          <motion.img
-            src={currentPage.image}
-            alt={`Slide ${pageIndex + 1}`}
+          <motion.div
             initial={{ opacity: 0, x: 0 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="w-full h-full object-cover"
-          />
+          >
+            <Image
+              src={currentPage.image}
+              alt={`Slide ${pageIndex + 1}`}
+              className="w-full h-full object-cover"
+              fill
+            />
+          </motion.div>
 
           <div className="z-10 absolute bottom-4 left-4 bg-white bg-opacity-80 p-4 rounded shadow text-black max-w-[80%]">
-            <p className="text-2xl">{currentPage.text}</p>
+            <p className="text-md lg:text-xl">{currentPage.text}</p>
           </div>
 
           {currentPage.avatars?.map((avatar, index) => (

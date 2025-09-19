@@ -1,5 +1,7 @@
 import { useAvatarStore } from "@/store/avatarStore";
 import { motion } from "framer-motion";
+import { div } from "framer-motion/client";
+import Image from "next/image";
 
 type Props = {
   id?: string;
@@ -47,10 +49,11 @@ export default function DynamicAvatarRenderer({
         {...floatAnimation}
         {...zoomAnimation}
       >
-        <motion.img
+        <Image
           src={image}
           alt={`avatar-${id}`}
           className="absolute top-0 left-0 w-full h-full object-contain"
+          fill
         />
       </motion.div>
     );
@@ -92,14 +95,14 @@ export default function DynamicAvatarRenderer({
       {...floatAnimation}
     >
       {layers.map(({ src, animate, transition }, index) => (
-        <motion.img
-          key={index}
-          src={src}
-          alt={`layer-${index}`}
-          className="absolute top-0 left-0 w-full h-full object-contain pointer-events-none"
-          animate={animate}
-          transition={transition}
-        />
+        <motion.div animate={animate} transition={transition} key={index}>
+          <Image
+            src={src}
+            alt={`layer-${index}`}
+            className="absolute top-0 left-0 w-full h-full object-contain pointer-events-none"
+            fill
+          />
+        </motion.div>
       ))}
     </motion.div>
   );

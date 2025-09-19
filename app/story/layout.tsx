@@ -1,3 +1,4 @@
+import Navbar from "@/components/ui/Navbar";
 import { section } from "framer-motion/client";
 
 export default function StoryLayout({
@@ -7,7 +8,7 @@ export default function StoryLayout({
 }>) {
   return (
     <section className="bg-[#e4f3ff] min-h-screen">
-      <p className="text-black">Navbar goes here</p>
+      <Navbar />
       {children}
     </section>
   );

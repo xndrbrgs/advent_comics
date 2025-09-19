@@ -10,9 +10,7 @@ export const stories = {
                         id: "main", // could be used to distinguish characters
                         position: { x: "20%", y: "45%" },
                         scale: 2.3,
-                        animation: {
-                            mouth: "talk",
-                        },
+
                     }
 
                 ],
@@ -288,7 +286,6 @@ export const stories = {
                         scale: 1.5,
                         animation: {
                             float: true,
-                            mouth: "talk",
                         }
                     },
                     {
@@ -349,7 +346,6 @@ export const stories = {
                         scale: 3,
                         animation: {
                             float: true,
-                            mouth: "talk"
                         },
                     },
                 ],
