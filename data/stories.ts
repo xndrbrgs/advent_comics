@@ -10,7 +10,7 @@ export const stories = {
                 avatars: [
                     {
                         id: "main", // could be used to distinguish characters
-                        position: { x: "20%", y: "45%" },
+                        position: { x: "20%", y: "55%" },
                         scale: 2.3,
 
                     }
@@ -24,7 +24,7 @@ export const stories = {
                 avatars: [
                     {
                         id: "main",
-                        position: { x: "60%", y: "45%" },
+                        position: { x: "30%", y: "55%" },
                         scale: 2.3,
                     },
 
@@ -37,7 +37,7 @@ export const stories = {
                 avatars: [
                     {
                         id: "main",
-                        position: { x: "20%", y: "45%" },
+                        position: { x: "20%", y: "55%" },
                         scale: 2.3,
                     },
                     {
@@ -59,7 +59,7 @@ export const stories = {
                 avatars: [
                     {
                         id: "main",
-                        position: { x: "20%", y: "45%" },
+                        position: { x: "20%", y: "55%" },
                         scale: 2.3,
                     },
 
@@ -187,10 +187,17 @@ export const stories = {
                 image: "/backgrounds/nitrous-sedation/slide (8).svg",
                 sound: "/vo/nitrous-sedation/slide8.mp3",
                 avatars: [
-                    {
+                        {
                         id: "main",
-                        position: { x: "20%", y: "55%" },
-                        scale: 2,
+                        position: { x: "25%", y: "40%" },
+                        scale: 1,
+                        rotate: "-40deg"
+                    },
+                    {
+                        id: "blanket",
+                        image: "/npc/blanket.webp",
+                        position: { x: "24%", y: "40%" },
+                        scale: 0.9,
                     },
                     {
                         id: "unicorn",
@@ -257,7 +264,7 @@ export const stories = {
                     {
                         id: "tube",
                         image: "/npc/tube.webp",
-                        position: { x: "65%", y: "20%" },
+                        position: { x: "70%", y: "20%" },
                         scale: 2.5,
                         animation: {
                             float: true,
@@ -274,7 +281,7 @@ export const stories = {
                 avatars: [
                     {
                         id: "main",
-                        position: { x: "20%", y: "50%" },
+                        position: { x: "20%", y: "55%" },
                         scale: 2,
                     },
                     {
@@ -295,7 +302,7 @@ export const stories = {
                 avatars: [
                     {
                         id: "main",
-                        position: { x: "20%", y: "60%" },
+                        position: { x: "20%", y: "65%" },
                         scale: 1.5,
                         animation: {
                             float: true,
@@ -357,7 +364,7 @@ export const stories = {
                 avatars: [
                     {
                         id: "main",
-                        position: { x: "45%", y: "40%" },
+                        position: { x: "45%", y: "55%" },
                         scale: 3,
                         animation: {
                             float: true,

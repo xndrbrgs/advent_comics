@@ -68,7 +68,7 @@ export default function StoryPage() {
   };
 
   return (
-    <div className="p-6 max-w-5xl mx-auto relative">
+    <div className="p-6 max-w-7xl mx-auto relative">
       <h1 className="text-5xl font-bold mb-4 text-black">{story.title}</h1>
 
       {/* 🎵 Music Player */}
@@ -81,7 +81,7 @@ export default function StoryPage() {
       <AnimatePresence mode="wait">
         <div
           key={pageIndex}
-          className="relative w-full h-[60vh] rounded-lg overflow-hidden shadow-lg mb-6"
+          className="relative w-full h-[40rem] rounded-lg overflow-hidden shadow-lg mb-6"
         >
           <motion.div
             initial={{ opacity: 0, x: 0 }}
