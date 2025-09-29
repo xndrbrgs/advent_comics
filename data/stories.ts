@@ -202,8 +202,8 @@ export const stories = {
                     {
                         id: "ele",
                         image: "/npc/Ele.webp",
-                        position: { x: "40%", y: "0%" },
-                        scale: 1.5,
+                        position: { x: "50%", y: "10%" },
+                        scale: 3,
                         animation: {
                             float: true,
                         }
@@ -287,8 +287,8 @@ export const stories = {
                     {
                         id: "ele",
                         image: "/npc/Ele.webp",
-                        position: { x: "50%", y: "35%" },
-                        scale: 1.5,
+                        position: { x: "60%", y: "35%" },
+                        scale: 4,
                         animation: {
                             float: true,
                         }
