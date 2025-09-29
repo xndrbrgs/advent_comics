@@ -183,7 +183,7 @@ export const stories = {
             },
 
             {
-                text: "I knew right away: a unicorn playing volleyball in a tutu!",
+                text: "I knew right away: an elephant playing volleyball with some friends!",
                 image: "/backgrounds/nitrous-sedation/slide (8).svg",
                 sound: "/vo/nitrous-sedation/slide8.mp3",
                 avatars: [
@@ -193,8 +193,8 @@ export const stories = {
                         scale: 2,
                     },
                     {
-                        id: "unicorn",
-                        image: "/npc/unicorn.webp",
+                        id: "ele",
+                        image: "/npc/Ele.webp",
                         position: { x: "40%", y: "0%" },
                         scale: 1.5,
                         animation: {
@@ -268,7 +268,7 @@ export const stories = {
                 ],
             },
             {
-                text: "BOOM! Suddenly, I was in a magical beach, playing volleyball with a unicorn in a sparkly tutu. We laughed, jumped and had the best time ever!",
+                text: "BOOM! Suddenly, I was in a magical beach, playing volleyball with an elephant and other animals! We laughed, jumped and had the best time ever!",
                 sound: "/vo/nitrous-sedation/slide11.mp3",
                 image: "/npc/beach.webp",
                 avatars: [
@@ -278,8 +278,8 @@ export const stories = {
                         scale: 2,
                     },
                     {
-                        id: "uni-solo",
-                        image: "/npc/uni-solo.webp",
+                        id: "ele",
+                        image: "/npc/Ele.webp",
                         position: { x: "50%", y: "35%" },
                         scale: 1.5,
                         animation: {
